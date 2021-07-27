@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/ae7a53592f.js" crossorigin="anonymous"></script>
+  <style>
+    .field{
+      border: 1px solid;
+    }
+    .bat{
+      height: 400px;
+      transition: transform 0.2s ease-in;
+    }
+    .field:hover .bat{
+      transform: rotate(-60deg);
+      transform-origin: top right;
+    }
+    .field:hover .ball{
+      transform: translate(510px, -200px);
+    }
+    .ball{
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: red;
+      position: relative;
+      left: 450px;
+      transition: transform 1s ease-out 0.2s;
+    }
+    .may{
+
+      position: relative;
+      left: 800px;
+      top: -300px
+    }
+  </style>
+
+</head>
+<body>
+  <div class="field">
+    <img class="bat" src="b.png" height="100%" alt="">
+    <div class="ball"></div>
+    <img class="may" src="m.jpg" alt="">
+  </div>
+ 
+</body>
+</html>
